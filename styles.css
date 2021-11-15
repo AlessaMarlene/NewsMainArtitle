@@ -1,0 +1,70 @@
+:root{
+    --fuente-titulo: 'Abril Fatface';
+    --fuente-general: 'Helvetica';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.articulo{
+    width: 850px;
+    font-family: var(--fuente-general);
+}
+
+.articulo h6{
+    letter-spacing: 0.1em;
+    padding: 10px 0;
+}
+
+.contenido{
+    display: flex;
+}
+
+.columna{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+    padding: 0 30px;
+}
+
+.columna h1, .cuerpo h2{
+    font-family: var(--fuente-titulo);
+}
+
+.columna h1{
+    font-size: 5em;
+    padding: 50px 0;
+}
+
+.columna h6{
+    text-align: center;
+}
+
+.cuerpo{
+    padding: 50px 0 0 50px;
+    border-top: 3px solid black;
+}
+
+.cuerpo h2{
+    font-size: 2.2em;
+}
+
+.cuerpo div{
+    column-count: 2;
+    column-gap: 8px;
+    padding-top: 30px;
+}
+
+.cuerpo div p:not(.excepcion){
+    margin-top: 15px;
+}
